@@ -54,7 +54,7 @@ const NewProductPage = () => {
     createProduct.mutate(formValuesToCreateProductMapper(newData, viewType), {
       onSuccess: ({ product }) => {
         setIsLoading(false)
-        notification("Success", "Product was succesfully created", "success")
+        notification("Success", "Product was successfully created", "success")
         navigate(`/a/products/${product.id}`)
       },
       onError: (error) => {

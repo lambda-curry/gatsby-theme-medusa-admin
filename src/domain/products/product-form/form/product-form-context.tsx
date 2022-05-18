@@ -67,6 +67,8 @@ export const ProductFormProvider = ({
   const [productOptions, setProductOptions] = React.useState<any[]>([])
   const [hasImagesChanged, setHasImagesChanged] = React.useState(false)
 
+  console.log("product", product)
+
   const appendImage = (image) => {
     setHasImagesChanged(true)
     setImages([...images, image])
